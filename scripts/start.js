@@ -1,5 +1,8 @@
 'use strict';
 
+
+
+
 process.env.NODE_ENV = 'development';
 
 // Load environment variables from .env file. Suppress warnings using silent
@@ -7,6 +10,8 @@ process.env.NODE_ENV = 'development';
 // that have already been set.
 // https://github.com/motdotla/dotenv
 require('dotenv').config({silent: true});
+
+console.log(process);
 
 var chalk = require('chalk');
 var webpack = require('webpack');
